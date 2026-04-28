@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Team - Utate Software Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
+  <style>
+    :root {
+      --brand-blue: #1E2A47;
+      --brand-orange: #FF7A00;
+      --bg: #F9FAFB;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--brand-blue);
+    }
+
+    .accent {
+      color: var(--brand-orange);
+    }
+
+    .card-glass {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(8px);
+    }
+  </style>
+  <!-- Component Loader Utility -->
+  <!-- Version Local: Inlined -->
+</head>
+
+<body class="min-h-screen flex flex-col" id="team-page">
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo -->
+      <div class="flex items-center space-x-4">
+        <a href="#" class="flex items-center space-x-3">
+          <img src="img/logo.png" alt="Utate Software Solutions" class="h-10 w-10">
+          <div>
+            <span class="text-xl font-extrabold text-[var(--brand-bluee)]">Utate</span>
+            <div class="text-sm -mt-1 text-[#1E293B] font-montserrat">Software Solutions</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-6 text-sm text-[var(--brand-bluee)]">
+        <a href="#home" class="hover:text-[var(--brand-orange)] transition">Home</a>
+        <a href="#services" class="hover:text-[var(--brand-orange)] transition">Services</a>
+        <a href="#testimonials" class="hover:text-[var(--brand-orange)] transition">Testimonials</a>
+        <a href="#faq" class="hover:text-[var(--brand-orange)] transition">FAQ</a>
+        <a href="OurTeam.html" class="hover:text-[var(--brand-orange)] transition">Our Team</a>
+        <a href="#contact" class="hover:text-[var(--brand-orange)] transition">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="md:hidden p-2 rounded-md hover:text-[var(--brand-orange)]">
+        <span class="material-icons notranslate" translate="no">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="md:hidden hidden border-t text-[var(--brand-bluee)]">
+    <div class="px-4 py-3 space-y-2">
+      <a href="#home" class="block hover:text-[var(--brand-orange)]">Home</a>
+      <a href="#services" class="block hover:text-[var(--brand-orange)]">Services</a>
+      <a href="#testimonials" class="block hover:text-[var(--brand-orange)]">Testimonials</a>
+      <a href="#faq" class="block hover:text-[var(--brand-orange)]">FAQ</a>
+      <a href="OurTeam.html" class="block hover:text-[var(--brand-orange)]">Our Team</a>
+      <a href="#contact" class="block hover:text-[var(--brand-orange)]">Contact</a>
+    </div>
+  </div>
+</header>
+
+
+  <!-- TEAM SECTION -->
+  <section class="flex-1 py-16 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold">Our Team</h2>
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+        Meet the people behind our digital solutions: developers passionate about technology, innovation, and excellence
+        in their work.
+      </p>
+
+      <!-- Team Members Grid -->
+      <div class="grid md:grid-cols-3 gap-8 mt-12">
+        <!-- Member 1 -->
+        <div class="card-glass rounded-2xl p-6 shadow text-center">
+          <img src="img/Cristian.jpeg" alt="Cristian Utate" class="w-32 h-32 rounded-full mx-auto object-cover">
+          <h3 class="mt-4 text-xl font-semibold">Cristian Utate</h3>
+          <p class="text-[var(--brand-orange)] text-sm">CEO & Founder</p>
+          <p class="mt-2 text-gray-600 text-sm">
+            A visionary in technology and business leadership, driving the creation of innovative and scalable digital
+            solutions.
+          </p>
+          <a href="#" class="mt-8 inline-block text-[var(--brand-blue)] font-semibold hover:text-[var(--brand-orange)] transition-colors">
+            Learn More
+          </a>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="card-glass rounded-2xl p-6 shadow text-center">
+          <img src="img/Johan.png" alt="Johan Rojas" class="w-32 h-32 rounded-full mx-auto object-cover">
+          <h3 class="mt-4 text-xl font-semibold">Johan Rojas</h3>
+          <p class="text-[var(--brand-orange)] text-sm">Full Stack Developer</p>
+          <p class="mt-2 text-gray-600 text-sm">
+            Passionate about creating modern and scalable digital solutions with a strong focus on user experience.
+          </p>
+          <a href="#" class="mt-8 inline-block text-[var(--brand-blue)] font-semibold hover:text-[var(--brand-orange)] transition-colors">
+            Learn More
+          </a>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="card-glass rounded-2xl p-6 shadow text-center">
+          <img src="img/Madelin.jpeg" alt="Madelin López" class="w-32 h-32 rounded-full mx-auto object-cover">
+          <h3 class="mt-4 text-xl font-semibold">Madelin López</h3>
+          <p class="text-[var(--brand-orange)] text-sm">Full Stack Developer</p>
+          <p class="mt-2 text-gray-600 text-sm">
+            Passionate about designing robust and efficient architectures, building scalable web applications.
+          </p>
+          <a href="#" class="mt-8 inline-block text-[var(--brand-blue)] font-semibold hover:text-[var(--brand-orange)] transition-colors">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center ">
+  <div class="bg-white text-[var(--brand-bluee)]">
+    <div class="max-w-7xl mx-auto px-6 py-14 space-y-12">
+      <div class="flex flex-col items-center space-y-3">
+        <a href="#" class="flex justify-center items-center space-x-3">
+          <img src="img/logo.png" alt="Utate Software Solutions" class="h-12 w-12 drop-shadow-md">
+          <span class="text-2xl font-extrabold font-montserrat tracking-wide text-[var(--brand-bluee)]">
+            Utate Software Solutions
+          </span>
+        </a>
+
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10 justify-center text-[var(--brand-bluee)]">
+        <div>
+          <h4 class="text-lg font-semibold mb-4 border-b-2 border-[var(--brand-orange)] inline-block pb-1">Links</h4>
+          <ul class="space-y-2 text-sm text-gray-700">
+            <li><a href="index.html#services" class="hover:text-[var(--brand-orange)] transition">Services</a></li>
+            <li><a href="index.html#testimonials" class="hover:text-[var(--brand-orange)] transition">Testimonials</a></li>
+            <li><a href="index.html#faq" class="hover:text-[var(--brand-orange)] transition">FAQ</a></li>
+          </ul>
+        </div>
+
+
+        <div>
+          <h4 class="text-lg font-semibold mb-4 border-b-2 border-[var(--brand-orange)] inline-block pb-1">Contact us
+          </h4>
+          <ul class="space-y-2 text-sm text-gray-700">
+            <li>Email: <a href="mailto:johanr97j@gmail.com"
+                class="hover:text-[var(--brand-orange)] transition">johanr97j@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex items-center justify-center space-x-5 mt-6">
+        <a href="#"
+          class="p-3 rounded-full bg-[var(--brand-bluee)]/10 hover:bg-[var(--brand-bluee)] shadow-md transition">
+          <img src="img/linkedin.png" alt="LinkedIn" class="w-6 h-6 object-contain">
+        </a>
+        <a href="#"
+          class="p-3 rounded-full bg-[var(--brand-bluee)]/10 hover:bg-[var(--brand-bluee)] shadow-md transition">
+          <img src="img/instagram.png" alt="Instagram" class="w-6 h-6 object-contain">
+        </a>
+        <a href="#"
+          class="p-3 rounded-full bg-[var(--brand-bluee)]/10 hover:bg-[var(--brand-bluee)] shadow-md transition">
+          <img src="img/facebook.png" alt="Facebook" class="w-6 h-6 object-contain">
+        </a>
+        <a href="#"
+          class="p-3 rounded-full bg-[var(--brand-bluee)]/10 hover:bg-[var(--brand-bluee)] shadow-md transition">
+          <img src="img/whatsapp.png" alt="WhatsApp" class="w-6 h-6 object-contain">
+        </a>
+      </div>
+    </div>
+</footer>
+<div class="bg-[var(--brand-bluee)] border-t border-white/20">
+  <p class="text-center text-sm md:text-base text-white py-5 tracking-wide">
+    © Utate Software Solutions 2025. All rights reserved.
+  </p>
+</div>
+
+</body>
+
+</html>

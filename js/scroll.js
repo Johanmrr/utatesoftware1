@@ -38,9 +38,27 @@ function initializeTechScroll() {
 }
 
 // Initialize on load or component injection
-document.addEventListener("DOMContentLoaded", initializeTechScroll);
+document.addEventListener("DOMContentLoaded", () => {
+    initializeTechScroll();
+    initializeAnimations();
+});
+
 document.addEventListener('componentLoaded', (e) => {
     if (e.detail.selector === '#stack-section') {
         initializeTechScroll();
     }
+    // Re-scan for reveal elements when any component is loaded
+    initializeAnimations();
 });
+
+function initializeAnimations() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+}
