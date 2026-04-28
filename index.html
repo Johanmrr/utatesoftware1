@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Utate Software Solutions — Build, Launch & Validate Your SaaS Fast</title>
+  <meta name="description" content="Launch your SaaS idea in weeks, not months. We build stunning, launch-ready MVPs.">
+  <meta name="keywords" content="SaaS development, MVP, software solutions, startup, Utate, web development">
+  <meta name="author" content="Utate Software Solutions">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://utate.com/">
+  <meta property="og:title" content="Utate Software Solutions — Build, Launch & Validate Your SaaS Fast">
+  <meta property="og:description"
+    content="Launch your SaaS idea in weeks, not months. We build stunning, launch-ready MVPs that users love.">
+  <meta property="og:image" content="https://utate.com/img/og-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://utate.com/">
+  <meta property="twitter:title" content="Utate Software Solutions — Build, Launch & Validate Your SaaS Fast">
+  <meta property="twitter:description"
+    content="Launch your SaaS idea in weeks, not months. We build stunning, launch-ready MVPs that users love.">
+  <meta property="twitter:image" content="https://utate.com/img/og-image.png">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/custom.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
+  
+  <!-- Component Loader Utility -->
+  <script src="js/loader.js" defer></script>
+</head>
+
+<body class="antialiased" id="home-page">
+  <div id="header-container"></div>
+
+  <main id="home">
+    <div id="hero-section"></div>
+    <div id="services-section"></div>
+    <div id="projects-section"></div>
+    <div id="stats-section"></div>
+    <div id="testimonials-section"></div>
+    <div id="stack-section"></div>
+    <div id="faq-section"></div>
+    <div id="contact-section"></div>
+
+    <div id="galleryModal" class="fixed inset-0 hidden z-50 flex items-center justify-center p-6">
+      <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+      <div class="relative z-10 bg-white/5 rounded-xl p-4 max-w-5xl w-full flex flex-col items-center">
+        <button id="modalClose"
+          class="absolute right-4 top-4 text-white bg-black/50 hover:bg-black/70 rounded-full p-2 transition"
+          aria-label="Cerrar (Esc)">
+          <span class="material-icons notranslate" translate="no">close</span>
+        </button>
+        <div class="flex items-center justify-center w-full">
+          <button id="modalPrev" class="modal-nav carousel-btn mr-3 hover:scale-110 transition"
+            aria-label="Anterior imagen">
+            <span class="material-icons text-white text-4xl notranslate" translate="no">chevron_left</span>
+          </button>
+          <img id="modalImg" src="" alt="Imagen proyecto"
+            class="max-h-[75vh] w-auto object-contain rounded-xl shadow-2xl">
+          <button id="modalNext" class="modal-nav carousel-btn ml-3 hover:scale-110 transition"
+            aria-label="Siguiente imagen">
+            <span class="material-icons text-white text-4xl notranslate" translate="no">chevron_right</span>
+          </button>
+        </div>
+        <div id="modalThumbs" class="mt-4 flex gap-2 justify-center overflow-x-auto px-2 w-full">
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-success" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+      <div class="bg-white rounded-lg p-6 max-w-sm w-full text-center shadow-lg">
+        <h3 class="text-xl font-semibold mb-4">Inquiry Sent</h3>
+        <p class="mb-6">Thank you for contacting us. We will get back to you soon.</p>
+        <button id="close-modal" class="bg-[var(--brand-blue)] text-white px-4 py-2 rounded hover:opacity-90">
+          Close
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <script src="js/scroll.js"></script>
+  <script src="js/translations1.js"></script>
+  <script src="js/gallery-modal.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+
+</html>

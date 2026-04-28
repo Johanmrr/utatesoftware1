@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Team - Utate Software Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
+  <style>
+    :root {
+      --brand-blue: #1E2A47;
+      --brand-orange: #FF7A00;
+      --bg: #F9FAFB;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--brand-blue);
+    }
+
+    .accent {
+      color: var(--brand-orange);
+    }
+
+    .card-glass {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(8px);
+    }
+  </style>
+  <!-- Component Loader Utility -->
+  <script src="js/loader.js" defer></script>
+</head>
+
+<body class="min-h-screen flex flex-col" id="team-page">
+  <div id="header-container"></div>
+
+  <!-- TEAM SECTION -->
+  <section class="flex-1 py-16 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold">Our Team</h2>
+      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+        Meet the people behind our digital solutions: developers passionate about technology, innovation, and excellence
+        in their work.
+      </p>
+
+      <!-- Team Members Grid -->
+      <div class="grid md:grid-cols-3 gap-8 mt-12">
+        <!-- Member 1 -->
+        <div class="card-glass rounded-2xl p-6 shadow text-center">
+          <img src="img/Cristian.jpeg" alt="Cristian Utate" class="w-32 h-32 rounded-full mx-auto object-cover">
+          <h3 class="mt-4 text-xl font-semibold">Cristian Utate</h3>
+          <p class="text-[var(--brand-orange)] text-sm">CEO & Founder</p>
+          <p class="mt-2 text-gray-600 text-sm">
+            A visionary in technology and business leadership, driving the creation of innovative and scalable digital
+            solutions.
+          </p>
+          <a href="#" class="mt-8 inline-block text-[var(--brand-blue)] font-semibold hover:text-[var(--brand-orange)] transition-colors">
+            Learn More
+          </a>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="card-glass rounded-2xl p-6 shadow text-center">
+          <img src="img/Johan.png" alt="Johan Rojas" class="w-32 h-32 rounded-full mx-auto object-cover">
+          <h3 class="mt-4 text-xl font-semibold">Johan Rojas</h3>
+          <p class="text-[var(--brand-orange)] text-sm">Full Stack Developer</p>
+          <p class="mt-2 text-gray-600 text-sm">
+            Passionate about creating modern and scalable digital solutions with a strong focus on user experience.
+          </p>
+          <a href="#" class="mt-8 inline-block text-[var(--brand-blue)] font-semibold hover:text-[var(--brand-orange)] transition-colors">
+            Learn More
+          </a>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="card-glass rounded-2xl p-6 shadow text-center">
+          <img src="img/Madelin.jpeg" alt="Madelin López" class="w-32 h-32 rounded-full mx-auto object-cover">
+          <h3 class="mt-4 text-xl font-semibold">Madelin López</h3>
+          <p class="text-[var(--brand-orange)] text-sm">Full Stack Developer</p>
+          <p class="mt-2 text-gray-600 text-sm">
+            Passionate about designing robust and efficient architectures, building scalable web applications.
+          </p>
+          <a href="#" class="mt-8 inline-block text-[var(--brand-blue)] font-semibold hover:text-[var(--brand-orange)] transition-colors">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-container"></div>
+</body>
+
+</html>

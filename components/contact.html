@@ -1,0 +1,45 @@
+<section id="contact" class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+    <!-- Contact Form -->
+    <div class="md:col-span-2 bg-white shadow-md rounded-lg p-6 reveal">
+      <h2 class="text-xl font-semibold mb-4">Send Us a Message</h2>
+      <!-- FormSubmit Integration -->
+      <form action="https://formsubmit.co/utatesoftwaresolutions@gmail.com" method="POST" class="space-y-4" id="contactForm">
+        <!-- Anti-spam honeypot -->
+        <input type="text" name="_honey" style="display:none">
+        <!-- Disable captcha for better UX -->
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Success page redirect (optional) -->
+        <input type="hidden" name="_next" value="https://utate.com/index.html">
+        
+        <input type="text" name="name" placeholder="Name" required
+          class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[var(--brand-blue)]">
+        <input type="email" name="email" placeholder="Email Address" required
+          class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[var(--brand-blue)]">
+        <input type="tel" name="phone" placeholder="Phone (Optional)"
+          class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[var(--brand-blue)]">
+        <textarea name="message" rows="5" placeholder="Tell us how we can help..." required
+          class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[var(--brand-blue)]"></textarea>
+
+        <button type="submit"
+          class="w-full bg-[var(--brand-blue)] text-white py-3 rounded-lg flex items-center justify-center hover:opacity-95 shadow">
+          <span class="material-icons mr-2 notranslate" translate="no">send</span>
+          <span>Send Message</span>
+        </button>
+      </form>
+    </div>
+
+    <!-- Contact Info -->
+    <aside class="space-y-6 reveal">
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <h3 class="text-lg font-semibold mb-4">Información de Contacto</h3>
+        <div class="flex items-start mb-4">
+          <span class="material-icons text-[var(--brand-blue)] mr-3 notranslate" translate="no">email</span>
+          <div>
+            <p>UtateSoftwareSolutions@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
