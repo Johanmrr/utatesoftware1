@@ -470,7 +470,7 @@
         <!-- Disable captcha for better UX -->
         <input type="hidden" name="_captcha" value="false">
         <!-- Success page redirect (optional) -->
-        <input type="hidden" name="_next" value="https://utate.com/index.html">
+        <input type="hidden" name="_next" value="https://utatesoftware.com/index.html">
         
         <input type="text" name="name" placeholder="Name" required
           class="w-full border rounded-lg p-3 focus:ring-2 focus:ring-[var(--brand-blue)]">
@@ -902,20 +902,8 @@ function initializeContactForm() {
     }
 }
 
-// Listen for the componentLoaded event to initialize the form
-document.addEventListener('componentLoaded', (e) => {
-    if (e.detail.selector === '#contact-section') {
-        console.log("Contact component loaded dynamically.");
-        initializeContactForm();
-    }
-});
-
-// Fallback for cases where it's already in the DOM (like index_LOCAL.html)
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initializeContactForm);
-} else {
-    initializeContactForm();
-}
+// Initialize directly since it's a single file
+document.addEventListener('DOMContentLoaded', initializeContactForm);
   </script>
 </body>
 </html>
